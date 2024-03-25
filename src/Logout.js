@@ -4,9 +4,8 @@ import Secret from "./Secret";
 
 const Logout = () => {
     const { logout, isAuthenticated } = useAuth0();
-
     return(
-        isAuthenticated &&(
+        isAuthenticated && (
         <div>
     <button onClick={() => logout()}>Log out</button>
     <Secret/>
