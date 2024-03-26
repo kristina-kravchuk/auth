@@ -8,7 +8,7 @@ import MyAccount from './MyAccount';
 
 
 function App() {
-  const { isLoading} = useAuth0;
+  const { isLoading} = useAuth0();
   if(isLoading) return <h1>LOADING!!!!</h1>
   return (
     <div className="App">
